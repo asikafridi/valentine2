@@ -11,7 +11,7 @@ A charming interactive website for Valentine's Day with a playful proposal and m
 ## 🚀 Quick Start
 1. **Clone the repo**:
    ```bash
-   git clone https://github.com/yourusername/valentine-surprise.git
+   git clone https://github.com/asikafridi/valentine2.git
    ```
 2. **Open `index.html`** in any browser
 3. **Host online**: Upload to Vercel, Netlify, or GitHub Pages
