@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will You Be My Valentine? 💖</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <meta name="description" content="A special Valentine's Day surprise" />
+  <meta name="keywords" content="Valentine, Love, Surprise, Romantic" />
+  <meta name="author" content="ASIKUR RAHMAN" />
+  <meta property="og:title" content="Will You Be My Valentine?" />
+  <meta property="og:description" content="A special Valentine's Day surprise" />
+  <meta property="og:image" content="https://i.ibb.co/k6xD4nM/New-Project.jpg" />
+  <meta property="og:url" content="https://asikafridi-valentine-fun.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <!-- Preload critical images -->
+  <link rel="preload" as="image" href="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true">
+  <link rel="preload" as="image" href="https://github.com/NikhilMarko03/resources/blob/main/happy1.gif?raw=true">
+</head>
+
+<body>
+  <div class="background-effects">
+    <div class="floating-hearts">
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+    </div>
+  </div>
+
+  <div class="header-content">
+    <img class="main-image" src="https://github.com/NikhilMarko03/resources/blob/main/happy1.gif?raw=true"
+      alt="Happy Valentine" id="mainImg" />
+    <h1 class="header-text" id="wedate">Will You Be My Valentine? 💖</h1>
+    <p class="subtitle">You make my heart skip a beat every time I see you..</p>
+  </div>
+
+  <div class="button-container" id="btns">
+    <button class="button button-yes" id="yes" onmouseenter="happy()" onmouseleave="normal()" onclick="yes()">
+      <span class="button-text">Yes 🥰</span>
+      <div class="button-glow"></div>
+    </button>
+    <button class="button button-no" id="no" onmouseenter="angry()" onmouseleave="normal()" onclick="no()">
+      <span class="button-text">No 😢</span>
+      <div class="button-glow"></div>
+    </button>
+  </div>
+
+  <div class="author-credit">
+    <p>
+      Made with ❤️ by
+      <a rel="noopener" href="https://asikafridi.vercel.app/" target="_blank" class="author-link">Ashik Afridi</a>
+    </p>
+    <a rel="noopener" target="_blank" href="https://asikafridi.vercel.app/">
+      <img class="heart-icon" src="https://logodix.com/logo/1205168.png" alt="Heart icon" />
+    </a>
+  </div>
+
+  <!-- Reaction Images -->
+  <div class="reaction-images" id="absImg">
+    <img class="reaction-image" src="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true"
+      alt="Heart" />
+    <img class="reaction-image" src="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true"
+      alt="Heart" />
+    <img class="reaction-image" src="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true"
+      alt="Heart" />
+    <img class="reaction-image" src="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true"
+      alt="Heart" />
+    <img class="reaction-image" src="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true"
+      alt="Heart" />
+  </div>
+
+  <!-- Yes Modal -->
+  <div class="modal" id="model2">
+    <audio id="happyMusic" preload="auto" loop>
+      <source src="./resources/happy.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Yay!💕</h2>
+        <p class="modal-text" id="modelText2">I Love You So Much!😘😘</p>
+      </div>
+      <img class="modal-image" id="modelImg2" src="https://media.tenor.com/2Ctk5j4dP7cAAAAj/shy-cat-cat-blushing.gif"
+        alt="Blushing cat" />
+      <div class="modal-actions">
+        <button class="button button-yes" onmouseenter="happy()" onmouseleave="normal()" onclick="ly2()">
+          <span class="button-text">Love You Too🥰</span>
+          <div class="button-glow"></div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- No Modal -->
+  <div id="model" class="modal">
+    <audio id="sadMusic" preload="auto" loop>
+      <source src="./resources/sad.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Oh no! 💔</h2>
+        <p class="modal-text" id="modelText">Please say yes... 😭</p>
+      </div>
+      <img class="modal-image" id="modelImg"
+        src="https://media.tenor.com/images/9413ffc5a11722a3cc456a88810750bd/tenor.gif" alt="Sad cat" />
+      <div class="modal-actions">
+        <button class="button button-yes" onmouseenter="happy()" onmouseleave="normal()" onclick="yes()">
+          <span class="button-text">Yes 🥰</span>
+          <div class="button-glow"></div>
+        </button>
+        <button class="button button-no" onmouseenter="angry()" onmouseleave="normal()" onclick="no()">
+          <span class="button-text">No 😢</span>
+          <div class="button-glow"></div>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="main2.js"></script>
+
+</html>
