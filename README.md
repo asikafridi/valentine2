@@ -40,7 +40,7 @@ A charming interactive website for Valentine's Day with a playful proposal and m
 Works on all modern browsers (Chrome, Firefox, Safari, Edge, mobile)
 
 ## 🌟 Credits
-- **Creator**: [Asikur Rahman](https://asikafridi.vercel.app/)
+- **Creator**: [ASIKUR RAHMAN](https://asikafridi.vercel.app/)
 - **Resources**: GIFs from Tenor, Icons from Logodix
 - **Idea**: Taken randomly from Reels and GitHub
 
